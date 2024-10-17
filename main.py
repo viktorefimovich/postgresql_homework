@@ -8,6 +8,8 @@ load_dotenv()
 
 
 def main():
+    """Главная функция - точка входа"""
+
     api_key = os.getenv('YT_API_KEY')
     if not api_key:
         raise ValueError("API ключ не найден. Проверьте, что переменная 'YT_API_KEY' задана в файле .env.")

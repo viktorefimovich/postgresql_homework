@@ -3,6 +3,7 @@ from configparser import ConfigParser
 
 
 def config(filename="database.ini", section="postgresql"):
+    """Функция чтения данных из файла конфигурации"""
 
     if not os.path.exists(filename):
         raise FileNotFoundError(f"Файл конфигурации {filename} не найден.")
